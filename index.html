@@ -60,27 +60,41 @@
                 <div class="modal">
                   <h2 class="modal-title">Leave your contacts and we will call you back</h2>
                   <form class="modal-form">
-                    <div class="modal-input">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" name="register"/>
-                    </div>
-                    <div class="modal-input">
-                      <label for="phone">Phone</label>
-                      <input type="tel" id="phone" name="register"/>
-                    </div>
-                    <div class="modal-input">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" name="register"/>
-                    </div>
-                    <div class="modal-input comment">
-                      <label for="comment" >Comment</label>
-                      <textarea id="comment" placeholder="Text input" name="register"></textarea>
-                    </div>
-                    <div class="modal-input policy">
-                      <input type="checkbox" name="policy" id="policy">
-                      <label for="policy">I accept the terms and conditions of the <a class="private-policy" href="">Privacy Policy</a></label>
-                    </div>
-                    <button type="submit" class="modal-submit">Send</button>
+                      <label class="modal-input">
+                        <span class="label-text">Name</span>
+                        <input type="text" name="register"/>
+                        <svg class="input-icon name">
+                          <use href="./images/name.svg"></use>
+                        </svg>
+                        </label>
+
+                      <label class="modal-input">
+                        <span class="label-text">
+                        Phone</span>
+                        <input type="tel" name="register"/>
+                        <svg class="input-icon phone">
+                          <use href="./images/phone.svg"></use>
+                        </svg>
+                      </label>
+
+                      <label class="modal-input">
+                        <span class="label-text">Email</span>
+                        <input type="email" name="register"/>
+                        <svg class="input-icon mail" >
+                          <use href="./images/mail.svg"></use>
+                        </svg>
+                      </label>
+
+                      <label class="modal-input comment"><span class="label-text">Comment</span>
+                        <textarea placeholder="Text input" name="register"></textarea>
+                      </label>
+
+                      <label class="modal-input policy">
+                        <input class="checkbox" type="checkbox" name="policy" id="policy">
+                        <span class="label-text policy">I accept the terms and conditions of the <a class="private-policy" href="">Privacy Policy</a></span>
+                      <span class="policy-icon"></span>
+                      </label>
+                        <button type="submit" class="modal-submit">Send</button>
                     </form>
                   <button type="button" class="button" data-modal-close>
                   <svg class="modal-icon">
@@ -496,8 +510,9 @@
                 </nav>
                 
             <form class="form-subscribe">
-              <h4 class="forth-title">Subscribe</h4>
-              <input type="email" placeholder="E-mail" id="subscribe">
+              <label><span class="forth-title">Subscribe</span>
+                <input type="email" placeholder="E-mail" id="subscribe">
+              </label>
             </form>
              <div class="subscribe">
               <button type="submit" class="subscribe-button">Subscribe</button>

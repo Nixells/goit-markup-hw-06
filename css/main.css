@@ -217,12 +217,6 @@ span.logo.studio {
   margin: 0px 24px;
 }
 
-.modal-input {
-  width: 360px;
-  height: 58px;
-  margin-bottom: 8px;
-}
-
 .modal-title {
   display: block;
   width: 100%;
@@ -235,9 +229,51 @@ span.logo.studio {
   margin-bottom: 16px;
 }
 
+/*label decoration*/
+
+.label-text.policy {
+  position: absolute;
+  height: 16px;
+  margin-bottom: 0px;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+
+.modal-form label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--modal-label-color);
+}
+
+.label-text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 4px;
+  letter-spacing: 0.04em;
+}
+
+/*input decoration*/
+
+.modal-input {
+  position: relative;
+  width: 360px;
+  height: 58px;
+  margin-bottom: 8px;
+}
+
+.modal-input.comment {
+  margin-bottom: 0px;
+}
+
 .modal-input input[name="register"] {
   margin: 0;
   padding: 16px;
+  padding-left: 38px;
   width: 360px;
   height: 40px;
   border: 1px solid var(--modal-label-bcg);
@@ -257,18 +293,12 @@ span.logo.studio {
 }
 
 .modal-input.policy {
+  display: block;
+  position: relative;
   width: 360px;
   height: 16px;
-  margin: 0;
-}
-
-.modal-form label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--modal-label-color);
-  margin-top: 8px;
+  margin-top: 16px;
+  margin-bottom: 0px;
 }
 
 .modal-input textarea {
@@ -281,7 +311,14 @@ span.logo.studio {
 }
 
 .modal-input .private-policy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 4px;
+  letter-spacing: 0.04em;
   text-decoration: underline;
+  color: var(--web);
+  margin-bottom: 0px;
 }
 
 .modal-submit {
@@ -296,7 +333,8 @@ span.logo.studio {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow;
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input input[name="register"]:focus,
@@ -304,6 +342,64 @@ span.logo.studio {
 .form-subscribe input:focus {
   border-color: var(--web);
   outline: none;
+}
+
+/*icon-modal*/
+
+.modal-input .checkbox {
+  appearance: none;
+}
+
+.modal-input .policy-icon {
+  position: absolute;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked ~ .policy-icon {
+  background-color: var(--button-portfolio);
+  background-image: url("../images/galka.svg");
+  background-position: center;
+}
+
+.input-icon.name {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 18px;
+  height: 18px;
+}
+
+.input-icon.phone {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 18px;
+  height: 18px;
+}
+
+.input-icon.mail {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-input .input-icon {
+  fill: var(--primary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input input[name="register"]:focus + .input-icon {
+  fill: var(--web);
 }
 
 /*nav*/
@@ -446,6 +542,7 @@ h6 {
 /*social media*/
 
 .forth-title {
+  display: inline-block;
   margin-top: 0px;
   margin-bottom: 8px;
   font-weight: 500;
@@ -685,8 +782,7 @@ footer .form-subscribe {
   border-radius: 4px;
   width: 264px;
   height: 40px;
-  padding: 16px 8px;
-  outline: none;
+  padding: 8px 16px;
   color: var(--white-color);
 }
 
@@ -713,8 +809,7 @@ footer .form-subscribe {
 }
 
 .subscribe {
-  margin-top: 35px;
-  margin-left: 24px;
+  margin-top: 37.76px;
 }
 
 /*Портфолио*/
