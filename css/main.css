@@ -371,26 +371,26 @@ span.logo.studio {
 
 .input-icon.name {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 16px;
   width: 18px;
-  height: 18px;
+  height: 24px;
 }
 
 .input-icon.phone {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 16px;
   width: 18px;
-  height: 18px;
+  height: 24px;
 }
 
 .input-icon.mail {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 16px;
   width: 18px;
-  height: 18px;
+  height: 24px;
 }
 
 .modal-input .input-icon {
